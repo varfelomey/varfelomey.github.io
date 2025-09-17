@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои важные ссылки</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #e94560, #ff9a3c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .subtitle {
+            color: #a9a9a9;
+            font-size: 1.1rem;
+        }
+        
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .link-button {
+            display: flex;
+            align-items: center;
+            padding: 18px 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .link-button:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        
+        .button-text {
+            flex: 1;
+        }
+        
+        .button-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+        }
+        
+        .button-description {
+            font-size: 0.9rem;
+            color: #a9a9a9;
+        }
+        
+        .arrow {
+            font-size: 1.5rem;
+        }
+        
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .link-button {
+                padding: 15px 20px;
+            }
+            
+            .button-title {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Мои ресурсы</h1>
+            <p class="subtitle">Важные ссылки для связи и информации</p>
+        </header>
+        
+        <div class="links-container">
+            <a href="http://t.me/varfelomey" class="link-button" target="_blank">
+                <div class="icon">📱</div>
+                <div class="button-text">
+                    <div class="button-title">Варфеломей</div>
+                    <div class="button-description">Мой телеграм аккаунт</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+            
+            <a href="https://t.me/varfelomey_bio" class="link-button" target="_blank">
+                <div class="icon">📝</div>
+                <div class="button-text">
+                    <div class="button-title">БИО</div>
+                    <div class="button-description">Моя биография</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+            
+            <a href="https://t.me/+TccbKbZrZDQ0Zjgx" class="link-button" target="_blank">
+                <div class="icon">🔒</div>
+                <div class="button-text">
+                    <div class="button-title">Приватка</div>
+                    <div class="button-description">Мой приватный канал</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+            
+            <a href="https://t.me/fackripper" class="link-button" target="_blank">
+                <div class="icon">👥</div>
+                <div class="button-text">
+                    <div class="button-title">Потрошитель</div>
+                    <div class="button-description">Мой друг</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+        </div>
+        
+        <footer>
+            <p>Все ссылки открываются в новой вкладке</p>
+        </footer>
+    </div>
+</body>
+</html>
